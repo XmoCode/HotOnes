@@ -1,0 +1,94 @@
+.tile {
+  display: grid;
+  max-width: 257px;
+  grid-template-columns: auto;
+  grid-template-rows: 35px/210px/130px;
+  margin-top: 15px;
+  border: 1px solid #1d2021;
+  background-color: #2b2f30;
+
+  font-family: monospace;
+  color: white;
+
+  .tile__header {
+    height: 35px;
+    margin: 15px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+
+    .origin {
+      letter-spacing: 1.5px;
+      color: #00ff77;
+    }
+  }
+
+  .tile__image {
+    justify-self: center;
+    height: 160px;
+  }
+
+  .tile__text {
+    display: inline-block;
+    height: 130px;
+    padding: 15px 5px 10px 8px;
+    font-variant: normal;
+    text-align: left;
+    overflow: hidden;
+
+    .name {
+      height: 38px;
+      margin: 10px 0 20px 0;
+      font-variant-caps: unicase;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 18px;
+      color: #c04df9;
+      text-align: left;
+    }
+
+    .brand {
+      font-size: 11px;
+      font-weight: 200;
+      letter-spacing: 1.5px;
+      color: lightgrey;
+    }
+  }
+
+  .tile__options {
+    color: #1d2021;
+    height: 0;
+    transition: height .1s;
+  }
+
+  a {
+    color: transparent;
+  }
+}
+
+.tile:hover {
+  transform: translateY(-20px);
+  transition: transform .1s;
+
+  grid-template-rows: 35px/210px/130px/48px;
+  background-color: rgb(49, 53, 54);
+
+  .tile__options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    background-color: #ff7700;
+    border-radius: 0 0 10px 10px;
+    color: white;
+    overflow-y: hidden;
+    font-size: 15px;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

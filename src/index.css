@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 0;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+
+.truncate-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; 
+  width: auto;
+  overflow: hidden;
+}
+
+.truncate-line-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: horizontal; 
+  width: auto;
+  overflow: hidden;
+}
+
+.truncate-line-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: horizontal; 
+  width: auto;
+  overflow: hidden;
+}
+
+
+
+.slider {
+  display: flex;    
+
+}
+
+
+.slick-slider {
+  max-width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+
+  background: "#1d2021";
+
+ 
+ 
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+
+
+.slick-track {
+  min-width: 100%;
+}
+
+
+
+.slick-dots {
+  max-width: 90%;
+  margin-top: 10px !important;
+  max-height: 20px;
+
+}
+
+
+.slick-dots  button:before {
+  color: lightgray !important;
+}
+.slick-dots li.slick-active button:before {
+  color:White !important;
+}
+
+.skin1 {
+  background-color: #1d2021;
+  border-radius: 10px 10px 0 0 ;
+
+}
+
+.skin2 {
+    background-color: #1d2021;
+    color: white;
+
+}
+
+.skin3 {
+  background-color: #2b2f30;
+  border-bottom: 2px solid black;
+  color: white;
+
+}
+
+.skin4 {
+  border-bottom: 3px solid white;
+  
+}
+
+.skin4 a {
+  color: black !important;
+}
+
+.skin4 .btn {
+  color: black !important;
+}
+
+.custom-view {
+  display: none;
+}
+
+@media screen and (min-width: 850px) {
+
+  .custom-view {
+    display: inline-block;
+    
+  }
+
+
+}
+
+.filter-mobile {
+  display: flex;
+  justify-content: left;
+
+ 
+}
+ 
+@media screen and (min-width: 850px) {
+  .filter-mobile {
+    display: none;
+  }
+}
+
+.custom-grid .tile {
+  width: 180px;
+}
+
+
+@media screen and (min-width: 734px) {
+ .custom-grid .tile {
+  width: 257px;
+ }
+
+ .custom-grid {
+  padding: 0;
+ }
+  
+}
+
+
+
+
+
+
+
+
